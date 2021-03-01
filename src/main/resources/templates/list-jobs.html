@@ -12,6 +12,14 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+    <table>
+        <th:block th:each="category : ${tableChoices}">
+            <tr >
+                <td th:each="item : ${category.value}" th:text="${item}"></td>
+            </tr>
+        </th:block>
+    </table>
+
 </div>
 
 </body>
